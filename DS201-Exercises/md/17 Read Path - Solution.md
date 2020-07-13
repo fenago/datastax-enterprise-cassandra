@@ -24,7 +24,7 @@ the bull, etc.
 following command:
 ```
 ```
-/home/ubuntu/node/resources/cassandra/bin/nodetool flush
+nodetool flush
 ```
 ```
 3) In your terminal, navigate to the data directory for the large table that cassandra-
@@ -126,7 +126,7 @@ SSTables and associated bloom filter files.
 7) Switch back to your terminal window and execute the following command:
 
 ```
-/home/ubuntu/node/resources/cassandra/bin/nodetool
+nodetool
 upgradesstables --include-all-sstables
 ```
 ```
@@ -160,7 +160,7 @@ ALTER TABLE keyspace1.standard1 WITH bloom_filter_fp_chance = 1.0;
 
 
 ```
-/home/ubuntu/node/resources/cassandra/bin/nodetool upgradesstables --include-
+nodetool upgradesstables --include-
 all-sstables
 ```
 ```
@@ -173,7 +173,7 @@ on, so there is no need to store the filters.
 11) Now execute the following command in your terminal:
 
 ```
-/home/ubuntu/node/resources/cassandra/bin/nodetool cfstats keyspace1.standard
+nodetool cfstats keyspace1.standard
 ```
 ```
 Part of the stats include bloom filter information. Since we have not read from the
@@ -181,7 +181,7 @@ cassandra-stress tables, the values are all zero. However, you can use these sta
 tune Apache Cassandra™ if necessary.
 ```
 ```
-ubuntu@ds201-node1:~$ /home/ubuntu/node/resources/cassandra/bin/nodetool
+ubuntu@ds201-node1:~$ nodetool
 cfstats keyspace1.standard
 Total number of tables: 47
 ----------------

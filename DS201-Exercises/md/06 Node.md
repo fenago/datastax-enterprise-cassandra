@@ -14,13 +14,12 @@
 
 ## 1) Open a terminal and navigate to your
 
-## /home/ubuntu/node/resources/cassandra/bin/ folder.
 
 ## 2) Execute nodetool with the `help` command to list all possible commands.
 
-## ./nodetool help
+## nodetool help
 
-ubuntu@ds201-node1:~/node/resources/cassandra/bin$ ./nodetool help
+ubuntu@ds201-node1:~/node/resources/cassandra/bin$ nodetool help
 usage: nodetool [(-u <username> | --username <username>)]
 [(-pw <password> | --password <password>)] [(-h <host> | --host <host>)]
 [(-p <port> | --port <port>)]
@@ -204,7 +203,7 @@ viewbuildstatus Show progress of a materialized view build
 
 ## 3) Try:
 
-## ./nodetool status
+## nodetool status
 
 Datacenter: Cassandra
 =====================
@@ -224,11 +223,11 @@ UN 127.0.0.1 174.89 KiB? 6e125b89-eb17-42b1-907a-a78c7d290f70 0 rack
 
 ## 4) Try:
 
-## /home/ubuntu/node/bin/dsetool status
+## /home/ubuntu/node/bin/nodetool status
 
-## Take note as to the differences between dsetool status and nodetool status. Although
+## Take note as to the differences between nodetool status and nodetool status. Although
 
-## both tools have a status command, dsetool works with DataStax Enterprise™ as a whole
+## both tools have a status command, nodetool works with Apache Cassandra™ as a whole
 
 ## (Apache Cassandra™, Apache Spark™, Apache Solr™, Graph) whereas nodetool is specific to
 
@@ -236,9 +235,9 @@ UN 127.0.0.1 174.89 KiB? 6e125b89-eb17-42b1-907a-a78c7d290f70 0 rack
 
 ## 5) Try:
 
-## ./nodetool info
+## nodetool info
 
-ubuntu@ds201-node1:~/node/resources/cassandra/bin$ ./nodetool info
+ubuntu@ds201-node1:~/node/resources/cassandra/bin$ nodetool info
 ID : 6e125b89-eb17-42b1-907a-a78c7d290f
 Gossip active : true
 Native Transport active: true
@@ -273,7 +272,7 @@ Token : 0
 
 ## 6) Try:
 
-## ./nodetool describecluster
+## nodetool describecluster
 
 ### Cluster Information:
 
@@ -296,9 +295,9 @@ Token : 0
 
 ## 7) Try:
 
-## ./nodetool getlogginglevels
+## nodetool getlogginglevels
 
-ubuntu@ds201-node1:~/node/resources/cassandra/bin$ ./nodetool getlogginglevels
+ubuntu@ds201-node1:~/node/resources/cassandra/bin$ nodetool getlogginglevels
 
 Logger Name Log Level
 ROOT INFO
@@ -320,7 +319,7 @@ org.apache.spark.rpc ERROR
 
 ## 8) Also try:
 
-## ./nodetool setlogginglevel org.apache.cassandra TRACE
+## nodetool setlogginglevel org.apache.cassandra TRACE
 
 ## The command setlogginglevel dynamically changes the logging level used by
 
@@ -330,7 +329,7 @@ org.apache.spark.rpc ERROR
 
 ## 9) Try:
 
-## ./nodetool settraceprobability 0.
+## nodetool settraceprobability 0.
 
 
 ## The resultant value from the settraceprobability command represents a decimal
@@ -341,7 +340,7 @@ org.apache.spark.rpc ERROR
 
 ## 10) Try:
 
-## ./nodetool drain
+## nodetool drain
 
 ## The drain command stops writes from occurring on the node and flushes all data to disk.
 
@@ -349,7 +348,7 @@ org.apache.spark.rpc ERROR
 
 ## 11) Try:
 
-## ./nodetool stopdaemon
+## nodetool stopdaemon
 
 ## The stopdaemon command stops a node's execution. Wait for it to complete.
 
@@ -379,9 +378,9 @@ org.apache.spark.rpc ERROR
 
 ## second, latency information, and more.
 
-## 14) Navigate back to /home/ubuntu/node/resources/cassandra/bin and run:
+## 14) Run:
 
-## ./nodetool flush
+## nodetool flush
 
 ## The flush command commits all written (memtable, discussed later) data to disk. Unlike
 
@@ -390,7 +389,7 @@ org.apache.spark.rpc ERROR
 ## 15) Check the new load on the node. Run:
 
 
-## ./nodetool status
+## nodetool status
 
 ## 16) We will now examine the data cassandra-stress wrote to our node. Start ./cqlsh.
 

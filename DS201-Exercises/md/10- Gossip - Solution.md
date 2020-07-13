@@ -20,7 +20,7 @@
 
 # Steps
 
-## 1) Be sure both nodes are up and running using dsetool status. Start your nodes if
+## 1) Be sure both nodes are up and running using nodetool status. Start your nodes if
 
 ## necessary.
 

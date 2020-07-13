@@ -22,14 +22,14 @@ added_date timestamp
 title text
 ```
 ```
-1) Back in your Terminal window, make sure DataStax Enterprise is still running with
-./dsetool status. If not, restart DataStax Enterprise.
+1) Back in your Terminal window, make sure Apache Cassandra is still running with
+nodetool status. If not, restart Apache Cassandra.
 ```
 ```
 2) In the terminal window, start cqlsh:
 ```
 ```
-/home/ubuntu/node/resources/cassandra/bin/cqlsh
+cqlsh
 ```
 ```
 3) In cqlsh, create a keyspace called YooToob. Use SimpleStrategy for the
@@ -75,7 +75,7 @@ video_id added_date title
 245e8024-14bd-11e5- 9743 - 8238356b7e32 2012 - 04 - 03 Cassandra & SSDs
 3452f7de-14bd-11e5-855e-8738355b7e3a 2013 - 03 - 17 Cassandra Intro
 4845ed97-14bd-11e5-8a40-8338255b7e33 2013 - 10 - 16 DataStax DevCenter
-5645f8bd-14bd-11e5-af1a-8638355b8e3a 2013 - 04 - 16 What is DataStax Enterprise?
+5645f8bd-14bd-11e5-af1a-8638355b8e3a 2013 - 04 - 16 What is Apache Cassandra?
 ```
 INSERT INTO videos (video_id, added_date, title)
 VALUES (1645ea59-14bd-11e5-a993-8138354b7e31, '2014- 01 - 29', 'Cassandra History');

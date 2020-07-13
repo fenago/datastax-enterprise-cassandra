@@ -15,7 +15,7 @@ partitions. The ring also eliminates any single points of failure.
 1) First, we will shut down your current node. Do so by executing the following command:
 ```
 ```
-/home/ubuntu/node/resources/cassandra/bin/nodetool stopdaemon
+nodetool stopdaemon
 ```
 ```
 Wait for the node to terminate before continuing.
@@ -28,7 +28,7 @@ cd /home/ubuntu
 rm -rf node
 ```
 ```
-3) To make a two-node cluster, we will unzip the DataStax Enterprise™ tarball twice
+3) To make a two-node cluster, we will unzip the Apache Cassandra™ tarball twice
 making two folders: node1 and node2. In your terminal, execute the following
 commands within the /home/ubuntu directory:
 ```

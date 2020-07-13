@@ -13,8 +13,8 @@ using the Python driver and read and write some data.
 
 # Steps
 
-1) Back in your Terminal window, make sure DataStax Enterprise is still running with
-/home/ubuntu/node/bin/dsetool status. If not, restart DataStax Enterprise.
+1) Back in your Terminal window, make sure Apache Cassandra is still running with
+/home/ubuntu/node/bin/nodetool status. If not, restart Apache Cassandra.
 
 2) Start your Python interpreter:
 

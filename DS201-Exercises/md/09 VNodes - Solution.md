@@ -16,7 +16,7 @@ the cluster, so we must work around this a bit to make it work.
 # Steps
 
 ```
-1) Be sure neither of your nodes is running. Use the dsetool status command to check
+1) Be sure neither of your nodes is running. Use the nodetool status command to check
 their running status. If either is running, be sure to stop them using the nodetool
 stopdaemon command.
 ```
@@ -26,7 +26,7 @@ stopdaemon command.
 ```
 ```
 2) Let's investigate the /home/ubuntu/node1/data/ directory. This is where we
-configured DataStax Enterprise™ to store all your data.
+configured Apache Cassandra™ to store all your data.
 ```
 ```
 ubuntu@ds201-node1:~/node/data$ ls /home/ubuntu/node1/data

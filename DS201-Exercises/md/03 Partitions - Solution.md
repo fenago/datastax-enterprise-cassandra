@@ -7,15 +7,15 @@ In this exercise, you will:
 # Steps
 
 NOTE: Be sure Apache Cassandra™ is running before doing these exercises. You can check by
-running dsetool on the command line:
+running nodetool on the command line:
 
-/home/ubuntu/node/bin/dsetool status
+/home/ubuntu/node/bin/nodetool status
 
 ```
 1) Start the CQL command shell at the command line:
 ```
 ```
-/home/ubuntu/node/resources/cassandra/bin/cqlsh
+cqlsh
 ```
 ```
 2) Switch to the YooToob keyspace via the USE command:

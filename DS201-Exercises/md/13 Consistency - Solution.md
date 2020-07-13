@@ -208,7 +208,7 @@ FROM YooToob.videos_by_tag
 WHERE tag = 'cassandra';
 ```
 22) Now, bring down the node containing your replica. Keep track of which node this is.
-Wait for the node to terminate before continuing. Use either dsetool or nodetool to
+Wait for the node to terminate before continuing. Use either nodetool or nodetool to
 verify that both of your replica nodes are down (the nodes responsible for the
 cassandra tag).
 

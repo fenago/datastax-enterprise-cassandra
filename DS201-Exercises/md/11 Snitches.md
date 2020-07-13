@@ -104,7 +104,7 @@ rack=hakuna-matata
 13) Once both nodes are up, execute:
 
 ```
-/home/ubuntu/node1/bin/dsetool status
+/home/ubuntu/node1/bin/nodetool status
 ```
 ```
 Notice the differing datacenter assignments now.

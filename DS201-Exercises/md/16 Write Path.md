@@ -164,12 +164,12 @@ Memtable switch count: 5
 disk.
 
 ```
-/home/ubuntu/node/resources/cassandra/bin/nodetool flush
+nodetool flush
 ```
 13) Now check the table stats again by executing
 
 ```
-/home/ubuntu/node/resources/cassandra/bin/nodetool cfstats
+nodetool cfstats
 keyspace1.standard
 ```
 ```

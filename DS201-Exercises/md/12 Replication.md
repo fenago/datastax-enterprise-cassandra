@@ -42,7 +42,7 @@ matata. Save and close the file.
 ```
 ```
 7) Once the node is up, ensure all three nodes are in your cluster by executing
-/home/ubuntu/node1/bin/dsetool status. (You can use any node's dsetool to
+/home/ubuntu/node1/bin/nodetool status. (You can use any node's nodetool to
 do this if you like.)
 ```
 
